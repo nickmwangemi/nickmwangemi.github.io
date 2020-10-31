@@ -28,7 +28,6 @@ const ContentStyles = styled.div`
 `
 
 const Layout = ({ children }) => {
-	console.log(children)
 	return (
 		<>
 			<GlobalStyles />
