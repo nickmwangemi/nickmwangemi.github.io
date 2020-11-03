@@ -21,7 +21,7 @@ module.exports = {
 			options: {
 				projectId: 'm15bthog',
 				dataset: 'production',
-				watch: true,
+				watchMode: true,
 				token: process.env.SANITY_TOKEN,
 			},
 		},
