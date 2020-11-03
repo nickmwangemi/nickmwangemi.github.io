@@ -29,7 +29,7 @@ const ProjectStyles = styled.div`
 function SingleProject({ project }) {
 	return (
 		<ProjectStyles>
-			<Link to={`/projects/${project.id}`}>
+			<Link to={`/projects/${project.slug.current}`}>
 				<h2>
 					<span className='mark'>{project.name}</span>
 				</h2>
