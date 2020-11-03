@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import Img from 'gatsby-image'
 
 function SingleProject({ project }) {
 	return (
@@ -8,6 +9,7 @@ function SingleProject({ project }) {
 				<h2>
 					<span className='mark'>{project.name}</span>
 				</h2>
+				<Img fluid={project.image.asset.fluid} alt={project.name} />
 			</Link>
 		</>
 	)
