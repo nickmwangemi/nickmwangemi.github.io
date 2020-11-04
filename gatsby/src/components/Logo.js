@@ -42,7 +42,7 @@ const LogoStyles = styled.div`
 		letter-spacing: 0.2em;
 		transform: translateY(-0.15em);
 	}
-	.name {
+	.slicks {
 		transform: scale(1.4);
 		display: block;
 		text-shadow: 0.18em 0.18em 0 rgba(0, 0, 0, 0.05);
@@ -62,14 +62,19 @@ const LogoStyles = styled.div`
 		display: inline-block;
 		line-height: 1;
 		transition: transform 0.3s;
-		&.N {
+		&.S {
 			--translateX: -0.05;
 		}
-		&.i {
+		&.l {
 			--rotate: 2deg;
 			--scale: 1.4;
 			--translateX: 0.05em;
 			--translateY: -0.05em;
+		}
+		&.i {
+			--scale: 0.9;
+			--translateY: -0.1em;
+			--translateX: 0.1em;
 		}
 		&.c {
 			--rotate: 3deg;
@@ -82,6 +87,14 @@ const LogoStyles = styled.div`
 			--scale: 1.2;
 			--translateX: 0.06em;
 		}
+		&.apos {
+			--translateX: 0.1em;
+		}
+		&.s {
+			--rotate: 12deg;
+			--scale: 0.9;
+			--translateY: -0.14em;
+		}
 	}
 `
 
@@ -90,7 +103,7 @@ export default function Logo() {
 		<LogoStyles className='logo'>
 			<div className='inner'>
 				<h1>
-					<span className='name'>
+					<span className='slicks'>
 						<span className='letter N'>N</span>
 						<span className='letter i'>i</span>
 						<span className='letter c'>c</span>

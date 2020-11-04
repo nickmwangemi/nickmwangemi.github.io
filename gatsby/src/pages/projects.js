@@ -19,7 +19,9 @@ export const query = graphql`
 			nodes {
 				name
 				id
-				link
+				livepreview
+				codepreview
+				projectdescription
 				image {
 					asset {
 						fluid(maxWidth: 5) {

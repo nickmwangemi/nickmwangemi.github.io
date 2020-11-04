@@ -5,6 +5,7 @@ import Nav from '../components/Nav'
 const HomePage = () => {
 	return (
 		<>
+			<hr />
 			<p>Hey I'm the home page</p>
 		</>
 	)

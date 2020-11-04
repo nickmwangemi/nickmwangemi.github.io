@@ -30,12 +30,23 @@ export default {
 				hotspot: true,
 			},
 		},
-
 		{
-			name: 'link',
-			title: 'Project Link',
+			name: 'livepreview',
+			title: 'Project Preview Link',
 			type: 'string',
-			description: 'Hosted link to the project',
+			description: 'Link to the hosted project',
+		},
+		{
+			name: 'codepreview',
+			title: 'Code Repository Link',
+			type: 'string',
+			description: "Link to the project's code repository",
+		},
+		{
+			name: 'projectdescription',
+			title: 'Project Description',
+			type: 'text',
+			description: 'Tell us about the project',
 		},
 	],
 }

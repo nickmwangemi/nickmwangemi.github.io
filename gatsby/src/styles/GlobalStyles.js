@@ -1,10 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
-import bg from '../assets/images/bg.svg';
-import stripes from '../assets/images/stripes.svg';
+import { createGlobalStyle } from 'styled-components'
+import bg from '../assets/images/bg.svg'
+import stripes from '../assets/images/stripes.svg'
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --red: #FF4949;
+    --red: #22223b;
     --black: #2E2E2E;
     --yellow: #ffc600;
     --white: #fff;
@@ -81,6 +81,6 @@ const GlobalStyles = createGlobalStyle`
     display: inline-block;
   }
 
-`;
+`
 
-export default GlobalStyles;
+export default GlobalStyles

@@ -25,14 +25,17 @@ const ProjectStyles = styled.div`
 		margin: 0;
 	}
 `
+const ProjectName = styled.h2`
+	padding-bottom: 10px;
+`
 
 function SingleProject({ project }) {
 	return (
 		<ProjectStyles>
 			<Link to={`/projects/${project.slug.current}`}>
-				<h2>
+				<ProjectName>
 					<span className='mark'>{project.name}</span>
-				</h2>
+				</ProjectName>
 			</Link>
 			<Img fluid={project.image.asset.fluid} alt={project.name} />
 		</ProjectStyles>

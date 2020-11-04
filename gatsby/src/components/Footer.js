@@ -1,10 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const FooterStyles = styled.footer`
+	text-align: center;
+`
 
 const Footer = () => {
 	return (
-		<div>
+		<FooterStyles>
 			<p>&copy; Nick Mwangemi {new Date().getFullYear()}</p>
-		</div>
+		</FooterStyles>
 	)
 }
 
