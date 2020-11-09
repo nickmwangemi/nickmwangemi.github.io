@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import useInterval from '../lib/useInterval'
 
 const TagLine = styled.p`
-	font-family: 'Plex Bold';
+	font-family: monospace;
 	margin-top: 25px;
 	margin-bottom: 50px;
 `
