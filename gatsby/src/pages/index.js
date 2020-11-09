@@ -4,8 +4,9 @@ import useInterval from '../lib/useInterval'
 
 const TagLine = styled.p`
 	font-family: monospace;
-	margin-top: 25px;
+	margin-top: 50px;
 	margin-bottom: 50px;
+	text-align: center;
 `
 
 const HomePage = () => {
