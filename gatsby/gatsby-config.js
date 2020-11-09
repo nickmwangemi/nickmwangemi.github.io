@@ -4,8 +4,6 @@ dotenv.config({
 	path: '.env',
 })
 
-console.log(process.env.SANITY_PROJECT_ID)
-
 module.exports = {
 	pathPrefix: '/projects',
 	siteMetadata: {

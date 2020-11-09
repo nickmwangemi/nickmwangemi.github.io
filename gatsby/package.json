@@ -12,7 +12,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "netlify": "netlify dev",
-    "prebuild": "netlify-lambda install"
+    "prebuild": "netlify-lambda install",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +54,7 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
     "esm": "^3.2.25",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.1.1"
   },
   "repository": {
