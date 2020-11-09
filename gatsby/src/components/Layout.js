@@ -23,7 +23,7 @@ const SiteBorderStyles = styled.div`
 	}
 `
 const ContentStyles = styled.div`
-	background: #f8f9fa;
+	background: #e5e5e5;
 	padding: 2rem;
 `
 
