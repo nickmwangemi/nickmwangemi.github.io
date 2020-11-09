@@ -13,7 +13,9 @@ const ProjectGrid = styled.div`
 // 	text-align: center;
 // 	background: var(--yellow);
 // `
-const ProjectDescription = styled.span`
+const ProjectDescription = styled.div`
+	margin-top: 35px;
+	font-family: monospace;
 	font-size: 16px;
 `
 
