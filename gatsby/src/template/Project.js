@@ -18,9 +18,13 @@ const ProjectDescription = styled.div`
 	font-family: monospace;
 	font-size: 16px;
 `
+const Preview = styled.div`
+	margin-top: 35px;
+	font-family: monospace;
+	font-size: 16px;
+`
 
 const SingleProjectPage = ({ data: { project } }) => {
-	console.log(project)
 	return (
 		<div>
 			<div>
@@ -36,20 +40,18 @@ const SingleProjectPage = ({ data: { project } }) => {
 				<div>
 					<ProjectDescription>{project.projectdescription}</ProjectDescription>
 
-					<ul>
-						<li>
-							<a href={project.livepreview} target='_blank'>
-								Live Preview
-							</a>
-						</li>
-						<li>
-							<a href={project.codepreview} target='_blank'>
-								Code Preview
-							</a>
-						</li>
-					</ul>
+					<Preview>
+						<a className='mark' href={project.livepreview} target='_blank'>
+							Live Preview
+						</a>
+					</Preview>
+
+					<Preview>
+						<a className='mark' href={project.codepreview} target='_blank'>
+							Code Preview
+						</a>
+					</Preview>
 				</div>
-				<div></div>
 			</ProjectGrid>
 		</div>
 	)
