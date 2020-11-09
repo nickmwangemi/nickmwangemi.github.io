@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{w2l6:function(n,e,i){"use strict";i.r(e);var t=i("q1tI"),r=i.n(t);e.default=function(){return r.a.createElement("div",null,"That page is missing like your girlfriend")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-4bd47a3f343eac5f7c4a.js.map
