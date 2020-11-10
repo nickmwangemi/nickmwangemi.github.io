@@ -17,14 +17,25 @@ const ProjectDescription = styled.div`
 	margin-top: 35px;
 	font-family: monospace;
 	font-size: 16px;
+	margin-bottom: 15px;
 `
 const Preview = styled.div`
 	margin-top: 35px;
 	font-family: monospace;
 	font-size: 16px;
 `
+const Tech = styled.p`
+	font-family: monospace;
+	font-size: 16px;
+`
+
+const TechAndTools = styled.div`
+	font-family: monospace;
+	font-size: 16px;
+`
 
 const SingleProjectPage = ({ data: { project } }) => {
+	console.log(project)
 	return (
 		<div>
 			<div>
@@ -40,15 +51,19 @@ const SingleProjectPage = ({ data: { project } }) => {
 				<div>
 					<ProjectDescription>{project.projectdescription}</ProjectDescription>
 
+					<Tech>Technologies and Tools used: </Tech>
+					<TechAndTools className='mark'>{project.techandtools}</TechAndTools>
+
 					<Preview>
 						<a className='mark' href={project.livepreview} target='_blank'>
 							Live Preview
 						</a>
 					</Preview>
-
 					<Preview>
 						<a className='mark' href={project.codepreview} target='_blank'>
-							Code Preview
+							{project.codepreview
+								? 'Code Preview'
+								: 'Code Preview Not Available'}
 						</a>
 					</Preview>
 				</div>
@@ -74,6 +89,7 @@ export const query = graphql`
 					}
 				}
 			}
+			techandtools
 		}
 	}
 `
