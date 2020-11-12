@@ -35,7 +35,6 @@ const TechAndTools = styled.div`
 `
 
 const SingleProjectPage = ({ data: { project } }) => {
-	console.log(project)
 	return (
 		<div>
 			<div>
