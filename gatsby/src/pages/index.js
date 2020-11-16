@@ -25,9 +25,9 @@ const HomePage = () => {
 	return (
 		<>
 			<TagLine>
-				Hello, I'm Nick Mwangemi. A Full-Stack Web Developer based in Nairobi,
-				Kenya. I like to work with JavaScript and Python but I am open to
-				learning new things.
+				Hello, I'm Nick Mwangemi. A Web Developer based in Nairobi, Kenya. I
+				like to work with JavaScript and Python but I am open to learning new
+				things.
 			</TagLine>
 			<TagLine>I use JavaScript and Python to build {text}</TagLine>
 		</>
