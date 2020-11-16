@@ -48,5 +48,11 @@ export default {
 			type: 'text',
 			description: 'Tell us about the project',
 		},
+		{
+			name: 'techandtools',
+			title: 'Technology and Tools Used',
+			type: 'string',
+			description: 'Mention the technology and tools used',
+		},
 	],
 }
